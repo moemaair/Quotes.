@@ -1,18 +1,19 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 .wrapper{
-  width: calc(100vw - 10%);
+  width: 30rem;
   height: 45vh;
   background-color: white;
-  margin:auto;
+  margin:3rem auto;
 }
 input{
-  width: 100%;
   height: 3rem;
   font-size: 1.2rem;
   border-top:none;
   border-left: none;
   border-right: none;
+  font-weight: 400;
+  font-style: italic;
 
 }
 input:focus{

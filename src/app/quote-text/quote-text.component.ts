@@ -12,4 +12,6 @@ export class QuoteTextComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ 
+
 }

@@ -1,1 +1,69 @@
-<p>quote-detail works!</p>
+<div class=" quoteDetail shadow mt-5" style="color: black; letter-spacing: 1.5px;">
+
+  <div class=" quotePlusVotes row">
+    <h3 class=" col quoteTest" > "quote here" {{quote}}</h3>
+    <div class=" likeOrDislike col">
+      <p class="btn btn-success"(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
+      <p class="btn btn-danger"(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
+    </div>
+  </div>
+
+  <table >
+    <tr >
+      <td><small >Full Name: {{name}}</small></td>
+      <td><small >Author Name: {{author}}</small></td>
+      <td><small class="time">{{date | date: 'mm'}} minutes ago</small> </td>
+    </tr>
+  </table> <hr>
+
+  <div class=" quotePlusVotes row">
+    <h3 class=" col" > "quote here" {{quote}}</h3>
+    <div class=" likeOrDislike col">
+      <p (click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
+      <p (click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
+    </div>
+  </div>
+
+  <table >
+    <tr >
+      <td><small >Full Name: {{name}}</small></td>
+      <td><small >Author Name: {{author}}</small></td>
+      <td><small>{{date | date: 'mm'}} minutes ago</small> </td>
+    </tr>
+  </table> <hr>
+
+  <div class=" quotePlusVotes row">
+    <h3 class=" col" > "quote here" {{quote}}</h3>
+    <div class=" likeOrDislike col">
+      <p (click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
+      <p (click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
+    </div>
+  </div>
+
+  <table >
+    <tr >
+      <td><small >Full Name: {{name}}</small></td>
+      <td><small >Author Name: {{author}}</small></td>
+      <td><small>{{date | date: 'mm'}} minutes ago</small> </td>
+    </tr>
+  </table> <hr>
+
+  <div class=" quotePlusVotes row">
+    <h3 class=" col" > "quote here" {{quote}}</h3>
+    <div class=" likeOrDislike col">
+      <p (click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
+      <p (click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
+    </div>
+  </div>
+
+  <table >
+    <tr >
+      <td><small >Full Name: {{name}}</small></td>
+      <td><small >Author Name: {{author}}</small></td>
+      <td><small>{{date | date: 'mm'}} minutes ago</small> </td>
+    </tr>
+  </table> <hr>
+
+  
+</div>
+

@@ -1,0 +1,24 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+.root{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem ;
+  overflow: hidden;
+}
+h1{
+  color: black;
+}
+.fas{
+  cursor: pointer;
+  color:rgb(40, 40, 109)
+}

@@ -12,4 +12,35 @@ export class QuoteDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public jina = 'mohamed';
+  
+  public author =''
+  public name =''
+  public quote =''
+
+  
+
+
+  date = new Date();
+  dateMinute = this.date.getMinutes();
+  likeCount=0;
+   unLikeCount=0;
+
+
+  likeFunction(): void {
+   this.likeCount = this.likeCount + 1;
+  }
+
+  unLikeFunction(): void {
+    this.unLikeCount = this.unLikeCount + 1;
+   }
+   sendBtn(){
+     this.author;
+     this.name;
+     this.quote;
+   }
+
+  
+
+
 }
