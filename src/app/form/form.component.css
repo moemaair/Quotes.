@@ -1,10 +1,18 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 .wrapper{
-  width: 30rem;
-  height: 45vh;
+  max-height: 48rem;
   background-color: white;
-  margin:3rem auto;
+  border-radius:  2rem .25rem 2rem .25rem;
+
+}
+form{
+  padding-bottom: 2rem;
+}
+.fa-quote-right{
+  color: rgb(177, 177, 177);
+  opacity: 0.6;
+  transform: scale(1.5);
 }
 input{
   height: 3rem;
@@ -21,4 +29,13 @@ input:focus{
 }
 input::placeholder, input{
   padding: 10px;
+}
+
+
+@media screen and (min-width: 48rem) {
+  .wrapper{
+    width: 30rem;
+
+  }
+
 }

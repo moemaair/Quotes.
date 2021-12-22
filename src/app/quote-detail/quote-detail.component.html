@@ -1,7 +1,25 @@
-<div class=" quoteDetail shadow mt-5" style="color: black; letter-spacing: 1.5px;">
+<div class=" quoteDetail shadow mt-4 rounded" style="color: black; letter-spacing: 1.5px;">
 
   <div class=" quotePlusVotes row">
-    <h3 class=" col quoteTest" > "quote here" {{quote}}</h3>
+    <app-quote-text class="col"></app-quote-text>
+    <div class=" likeOrDislike col">
+      <p class="btn btn-success "(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
+      <p class="btn btn-danger "(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
+    </div>
+  </div>
+
+  <table >
+    <tr class="row">
+      <div class="  col d-flex gap-2 flex-column">
+        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
+        <td><small >Author Name: Maaair {{author}}</small></td>  
+      </div>
+      <td><small class="time col">{{date | date: 'hh:mm'}} minutes ago</small> </td>
+    </tr>
+  </table> <hr>
+
+  <div class=" quotePlusVotes row">
+    <strong class=" col quoteTest" >  “Get busy living or get busy dying.” {{quote}}</strong>
     <div class=" likeOrDislike col">
       <p class="btn btn-success"(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
       <p class="btn btn-danger"(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
@@ -9,58 +27,48 @@
   </div>
 
   <table >
-    <tr >
-      <td><small >Full Name: {{name}}</small></td>
-      <td><small >Author Name: {{author}}</small></td>
+    <tr class="row">
+      <div class="  col d-flex gap-2 flex-column">
+        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
+        <td><small >Author Name: Maaair {{author}}</small></td>  
+      </div>
+      <td><small class="time col">{{date | date: 'mm'}} minutes ago</small> </td>
+    </tr>
+  </table> <hr>
+
+  <div class=" quotePlusVotes row">
+    <strong class=" col quoteTest" > “In order to write about life first you must live it.” {{quote}}</strong>
+    <div class=" likeOrDislike col">
+      <p class="btn btn-success"(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
+      <p class="btn btn-danger"(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
+    </div>
+  </div>
+
+  <table >
+    <tr class="row">
+      <div class="  col d-flex gap-2 flex-column">
+        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
+        <td><small >Author Name: Maaair {{author}}</small></td>  
+      </div>
+      <td><small class="time col">{{date | date: 'mm'}} minutes ago</small> </td>
+    </tr>
+  </table> <hr>
+
+  <div class=" quotePlusVotes row">
+    <strong class=" col quoteTest" > “Turn your wounds into wisdom.” {{quote}}</strong>
+    <div class=" likeOrDislike col">
+      <p class="btn btn-success"(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
+      <p class="btn btn-danger"(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
+    </div>
+  </div>
+
+  <table >
+    <tr>
+      <div class="d-flex flex-column gap-2 ">
+        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
+        <td><small >Author Name: Maaair {{author}}</small></td>  
+      </div>
       <td><small class="time">{{date | date: 'mm'}} minutes ago</small> </td>
-    </tr>
-  </table> <hr>
-
-  <div class=" quotePlusVotes row">
-    <h3 class=" col" > "quote here" {{quote}}</h3>
-    <div class=" likeOrDislike col">
-      <p (click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
-      <p (click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
-    </div>
-  </div>
-
-  <table >
-    <tr >
-      <td><small >Full Name: {{name}}</small></td>
-      <td><small >Author Name: {{author}}</small></td>
-      <td><small>{{date | date: 'mm'}} minutes ago</small> </td>
-    </tr>
-  </table> <hr>
-
-  <div class=" quotePlusVotes row">
-    <h3 class=" col" > "quote here" {{quote}}</h3>
-    <div class=" likeOrDislike col">
-      <p (click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
-      <p (click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
-    </div>
-  </div>
-
-  <table >
-    <tr >
-      <td><small >Full Name: {{name}}</small></td>
-      <td><small >Author Name: {{author}}</small></td>
-      <td><small>{{date | date: 'mm'}} minutes ago</small> </td>
-    </tr>
-  </table> <hr>
-
-  <div class=" quotePlusVotes row">
-    <h3 class=" col" > "quote here" {{quote}}</h3>
-    <div class=" likeOrDislike col">
-      <p (click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
-      <p (click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
-    </div>
-  </div>
-
-  <table >
-    <tr >
-      <td><small >Full Name: {{name}}</small></td>
-      <td><small >Author Name: {{author}}</small></td>
-      <td><small>{{date | date: 'mm'}} minutes ago</small> </td>
     </tr>
   </table> <hr>
 

@@ -1,12 +1,12 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 .quoteDetail{
-  width: 35vw;
-  height: 25rem;
+  height: 30rem;
   background-color: white;
   overflow-y: scroll;
   padding: 1.2rem;
   margin: auto;
+  
 
 }
 .time{

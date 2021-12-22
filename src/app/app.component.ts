@@ -17,7 +17,7 @@ export class AppComponent {
 
 
   modeToogle(){
-    this.bgcolor ='#314443'
+    this.bgcolor ='#15202B'
     this.headingColor ='white'
     this.far ='black'
 
