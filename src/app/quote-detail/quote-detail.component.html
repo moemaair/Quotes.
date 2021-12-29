@@ -1,7 +1,7 @@
 <div class=" quoteDetail shadow mt-4 rounded" style="color: black; letter-spacing: 1.5px;">
 
   <div class=" quotePlusVotes row">
-    <app-quote-text class="col"></app-quote-text>
+    <app-quote-text class="col" [quote] ='quote'></app-quote-text>
     <div class=" likeOrDislike col">
       <p class="btn btn-success "(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
       <p class="btn btn-danger "(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
@@ -11,15 +11,17 @@
   <table >
     <tr class="row">
       <div class="  col d-flex gap-2 flex-column">
-        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
-        <td><small >Author Name: Maaair {{author}}</small></td>  
+        <td><small >Publisher: {{name}}</small></td>
+        <td><small >Author Name: {{author}}</small></td>  
       </div>
-      <td><small class="time col">{{date | date: 'hh:mm'}} minutes ago</small> </td>
+      <td><small class="time col">{{date | date: 'mm'}} minutes ago</small> </td>
     </tr>
   </table> <hr>
 
-  <div class=" quotePlusVotes row">
-    <strong class=" col quoteTest" >  “Get busy living or get busy dying.” {{quote}}</strong>
+
+
+  <!-- <div class=" quotePlusVotes row">
+    <strong class=" col quoteTest" >  “Get busy living or get busy dying.” </strong>
     <div class=" likeOrDislike col">
       <p class="btn btn-success"(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
       <p class="btn btn-danger"(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
@@ -29,15 +31,15 @@
   <table >
     <tr class="row">
       <div class="  col d-flex gap-2 flex-column">
-        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
-        <td><small >Author Name: Maaair {{author}}</small></td>  
+        <td><small >Publisher:Mohamed ibrahim </small></td>
+        <td><small >Author Name: Maaair </small></td>  
       </div>
       <td><small class="time col">{{date | date: 'mm'}} minutes ago</small> </td>
     </tr>
   </table> <hr>
 
   <div class=" quotePlusVotes row">
-    <strong class=" col quoteTest" > “In order to write about life first you must live it.” {{quote}}</strong>
+    <strong class=" col quoteTest" > “In order to write about life first you must live it.”</strong>
     <div class=" likeOrDislike col">
       <p class="btn btn-success"(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
       <p class="btn btn-danger"(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
@@ -47,15 +49,15 @@
   <table >
     <tr class="row">
       <div class="  col d-flex gap-2 flex-column">
-        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
-        <td><small >Author Name: Maaair {{author}}</small></td>  
+        <td><small >Publisher:Mohamed ibrahim </small></td>
+        <td><small >Author Name: Maaair </small></td>  
       </div>
       <td><small class="time col">{{date | date: 'mm'}} minutes ago</small> </td>
     </tr>
   </table> <hr>
 
   <div class=" quotePlusVotes row">
-    <strong class=" col quoteTest" > “Turn your wounds into wisdom.” {{quote}}</strong>
+    <strong class=" col quoteTest" > “Turn your wounds into wisdom.” </strong>
     <div class=" likeOrDislike col">
       <p class="btn btn-success"(click) ='likeFunction()'><i class="far fa-thumbs-up"> {{likeCount}} </i></p>
       <p class="btn btn-danger"(click) ='unLikeFunction()'><i class="far fa-thumbs-down "> {{unLikeCount}} </i></p>
@@ -65,12 +67,12 @@
   <table >
     <tr>
       <div class="d-flex flex-column gap-2 ">
-        <td><small >Publisher:Mohamed ibrahim {{name}}</small></td>
-        <td><small >Author Name: Maaair {{author}}</small></td>  
+        <td><small >Publisher:Mohamed ibrahim </small></td>
+        <td><small >Author Name: Maaair </small></td>  
       </div>
       <td><small class="time">{{date | date: 'mm'}} minutes ago</small> </td>
-    </tr>
-  </table> <hr>
+    </tr> -->
+  <!-- </table> <hr> -->
 
   
 </div>

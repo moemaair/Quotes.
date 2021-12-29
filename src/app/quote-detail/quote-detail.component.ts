@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-quote-detail',
@@ -7,40 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteDetailComponent implements OnInit {
 
-  constructor() { }
 
+@Input() author:any;
+@Input() name:any;
+@Input() quote:any;
+
+
+
+
+  
   ngOnInit(): void {
   }
+  constructor(){}
 
-  public jina = 'mohamed';
-  
-  public author =''
-  public name =''
-  public quote =''
 
   
-
-
-  date = new Date();
-  dateMinute = this.date.getMinutes();
-  likeCount=0;
+  //variables 
+   date = new Date();
+   dateMinute = this.date.getMinutes();
+   likeCount=0;
    unLikeCount=0;
 
-
+//click buttons For like and Unlike 
   likeFunction(): void {
    this.likeCount = this.likeCount + 1;
   }
-
   unLikeFunction(): void {
     this.unLikeCount = this.unLikeCount + 1;
    }
-   sendBtn(){
-     this.author;
-     this.name;
-     this.quote;
-   }
-
-  
-
-
 }
