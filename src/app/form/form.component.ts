@@ -1,17 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Pipe, ViewEncapsulation } from '@angular/core';
+
 import { NgForm } from '@angular/forms';
 import { QuoteTextComponent } from '../quote-text/quote-text.component';
 import { Quotes } from '../quotes';
+import { InfoserviceService } from '../service/infoservice.service';
 
   
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class FormComponent {
 
 
+constructor(public infoserviceService: InfoserviceService){}
 //variable definations 
 
   public author =''
@@ -23,7 +27,7 @@ quotes: Quotes[] = [
   { 
      author: 'John cena',
      name: 'mohamed ibrahim', 
-     quote: 'life is good!'
+     quote: "Setting a good example for your children takes all the fun out of middle age"
   }
 ]
 
