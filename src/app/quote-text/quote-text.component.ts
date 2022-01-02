@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { FormComponent } from '../form/form.component'
+import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
 @Component({
-  selector: 'app-quote-text',
+  selector: 'quote-text',
   templateUrl: './quote-text.component.html',
   styleUrls: ['./quote-text.component.css']
 })
