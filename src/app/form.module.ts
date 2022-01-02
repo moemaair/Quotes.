@@ -5,6 +5,8 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteTextComponent } from './quote-text/quote-text.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { InfoserviceService } from './service/infoservice.service';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ InfoserviceService ],
   bootstrap: [FormComponent]
 })
 export class AppModule { }
