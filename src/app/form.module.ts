@@ -6,6 +6,7 @@ import { QuoteTextComponent } from './quote-text/quote-text.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import { InfoserviceService } from './service/infoservice.service';
+import { NgProgressModule } from '@ngx-progressbar/core';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { InfoserviceService } from './service/infoservice.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+
+  
   ],
   providers: [ InfoserviceService ],
   bootstrap: [FormComponent]

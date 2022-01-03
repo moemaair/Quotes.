@@ -3,21 +3,25 @@
   <!-- <header class="text-center" style="color: white;">
     <h1 class="container" >QuoteApp</h1>
   </header> -->
- 
   <div class="root container-fluid d-flex flex-column flex-lg-row ">
-      <div class="wrapper shadow-lg rounded ">
+      <div class="wrapper shadow-lg">
         <header class="text-center" style="color: white;">
-        <h1 class="container" data-aos ='fade-down' data-aos-duration="4500">QuoteApp</h1>
+          <h1 class="container " data-aos ='fade-down' data-aos-duration="4500">QuoteApp</h1>
         </header>
-        <h4 class="text-center pt-2"  data-aos ='fade-down' data-aos-duration="4300">Form Input</h4>
+
         <i class="fas fa-quote-right position-abolute"></i>
     <!-- form section -->
-        <form class="container-fluid d-flex flex-column gap-4 ">
+        <form class="container-fluid d-flex flex-column gap-4 text-center  mt-lg-5 ">
+          <label for="">Author</label>
           <input type="text" name="Authorname"  placeholder="Author Name..." [(ngModel)]='author'data-aos="zoom-down"  data-aos-duration="3500">  
+          <label for="">Publisher</label>
           <input type="text" name="name"  placeholder="Your Name..." [(ngModel)]='name' data-aos="zoom-down"  data-aos-duration="3500"> 
+          <label for="">Quote</label>
           <textarea type="text" name="message" placeholder="Write your Quote Here..." [(ngModel)]='quote'data-aos="zoom-down"  data-aos-duration="3500" ></textarea>
           <button class="btn btn-success shadow"  (click) ='sendBtn()'>Send</button>
         </form>
+        <img [src] = 'bookshelfImg' style="width: 100%; height: auto"  data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">>
       </div>
 
           
@@ -38,7 +42,7 @@
 
        <section class="timePlusBin d-flex justify-content-between">
          <i> Written at 11:12am</i>
-        <i class="fas fa-trash-alt" ></i>  <!--(click) ='removeCard()' -->
+        <i class="fas fa-trash-alt" (click) ='removeCard()' ></i>  <!--(click) ='removeCard()' -->
        </section>
     </div>
   
@@ -59,7 +63,7 @@
 
      <section class="timePlusBin d-flex justify-content-between">
        <i> Written at 4:12pm</i>
-      <i class="fas fa-trash-alt" ></i>  <!--(click) ='removeCard()' -->
+      <i class="fas fa-trash-alt"(click) ='removeCard()' ></i>  <!--(click) ='removeCard()' -->
      </section>
   </div>
 
@@ -70,8 +74,8 @@
       <p>"{{q.quote}}."</p>        
     <!-- like and dislike btns -->
     <div class="likeOrDislike col">
-      <p class="btn btn-success "><i class="far fa-thumbs-up">  </i></p>
-      <p class="btn btn-danger "><i class="far fa-thumbs-down ">  </i></p>
+      <p class="btn btn-success "><i class="far fa-thumbs-up" (click) ='like()'> {{infoserviceService.likeCount}} </i></p>
+      <p class="btn btn-danger "><i class="far fa-thumbs-down " (click) ='unlike()'> {{infoserviceService.unLikeCount}} </i></p>
     </div>
     <!-- author and publisher -->
     <div>
@@ -80,7 +84,7 @@
 
        <section class="timePlusBin d-flex justify-content-between">
          <i> Written at {{infoserviceService.date | date:'shortTime'}}</i>
-        <i class="fas fa-trash-alt" ></i>  <!--(click) ='removeCard()' -->
+        <i class="fas fa-trash-alt"(click) ='removeCard()'></i>  
        </section>
     </div>
   

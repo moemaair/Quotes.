@@ -1,4 +1,4 @@
-/* @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 .quoteDetail{
   display: flex;
@@ -8,12 +8,10 @@
   height: 75vh;
   
 }
-
 .time{
   font-weight: 100;
   font-style: italic;
 }
-
 .likeOrDislike{
   display: flex;
   padding-top: 5px;
@@ -38,4 +36,4 @@
   .quoteDetail{
    width: 100%;
   }
-} */
+}

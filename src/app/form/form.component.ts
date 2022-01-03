@@ -1,5 +1,4 @@
 import { Component, Pipe, ViewEncapsulation } from '@angular/core';
-
 import { NgForm } from '@angular/forms';
 import { QuoteTextComponent } from '../quote-text/quote-text.component';
 import { Quotes } from '../quotes';
@@ -13,6 +12,9 @@ import { InfoserviceService } from '../service/infoservice.service';
   encapsulation: ViewEncapsulation.None
 })
 export class FormComponent {
+
+  bookshelfImg = './assets/bookshelf.png'
+  
 
 
 constructor(public infoserviceService: InfoserviceService){}
@@ -46,6 +48,17 @@ quotes: Quotes[] = [
     this.author = '';
     this.name = '';
   
+  }
+  removeCard(){
+    alert("Are you sure you want to Delete this Quote?");
+    document.getElementById('quoteCard')?.remove()
+  }
+  like(){
+    this.infoserviceService.likeCount++
+  }
+  unlike(){
+    this.infoserviceService.unLikeCount++
+
   }
   
  

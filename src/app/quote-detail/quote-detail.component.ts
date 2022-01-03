@@ -30,11 +30,11 @@ quotes: Quotes[] = [
 // Submit button (Send button)
 
   
-  //variables 
-   date = new Date();
-   dateMinute = this.date.getMinutes();
-   likeCount=0;
-   unLikeCount=0;
+  // //variables 
+  //  date = new Date();
+  //  dateMinute = this.date.getMinutes();
+  //  likeCount=0;
+  //  unLikeCount=0;
 
 // //click buttons For like and Unlike 
 //   likeFunction(): void {
