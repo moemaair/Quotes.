@@ -5,20 +5,20 @@
   box-sizing: border-box;
 }
 .root{
-  background-color: #120f1f;
-  width:100vw;
-  height: 100vh;
-  display: flex;
-  gap: 5rem ;
-  overflow: hidden;
+  min-height:100vh ;
+  width: 100vw;
+  padding: 0;
 }
 .wrapper{
-  margin-top: 2rem;
-  width: 100%;
-  height: 75vh;
   background-color: #15202B;
   padding-bottom: .8rem;
+
 }
+
+
+
+
+
 header h1{
   background: linear-gradient(
     to right, 
@@ -33,6 +33,7 @@ header h1{
   color: rgb(177, 177, 177);
   opacity: 0.6;
   transform: scale(1.5);
+  transform: translateX(1rem);
 }
 input,textarea{
   background-color: transparent;
@@ -45,17 +46,18 @@ input,textarea{
   font-style: italic;
 
 }
+label{
+  color: white;
+}
 textarea{
   color: white;
   resize: none;
-  white-space: nowrap;
-  overflow-x: scroll;
+  overflow: hidden;
+
 }
-  textarea::placeholder{
+textarea::placeholder{
     padding: 10px;
     color: rgb(194, 194, 194);
-
-
   }
 input, textarea:focus{
   outline: none;
@@ -64,82 +66,19 @@ input::placeholder, input{
   padding: 10px;
   color: rgb(194, 194, 194);
 }
-
-
-
-
-/* quote-detail shared css */
-
-.quoteDetail{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  overflow-y: scroll;
-  margin-top: -1rem;
-  height: 75vh;
-  color: black;
-}
-
-
-.likeOrDislike{
-  display: flex;
-  padding-top: 5px;
-  gap: 2rem;
-}
- span{
-  display: flex;
-  flex-direction: column;
-}
-.quoteCard{
-  margin: 1.2rem;
-  height: 300px;
-  color: white;
-}
-.fa-trash-alt{
-  color: #DC3545;
-  justify-content: space-between;
-}
-
-
-
-@media screen and (min-width: 48rem) {
-  .root{
-   
-    gap: 0;
-  }
+@media screen and (min-width: 49rem) {
   .wrapper{
-  justify-self: center;
-  align-self: center;
-  width: 35vw;
-  height: 100vh;  
-  padding-bottom: 40px;
-  padding: 1.5rem;
-  background-color: #15202B;
-  margin-left: -1.2rem;
-  color: white;
-  box-shadow: 0 1rem 3rem rgba(black, .175);
+    width: 35vw;
+  }
+  .root .quoteDetail {
+  flex-wrap: wrap;
+  width: 60vw;
+  }
+  form{
+    padding: 2rem;
+  }
+  
 }
 
-.input{
-  color: white;
-}
-.quoteCard{
-  width: 15.5rem;
-  height: 16.5rem;
- }
- .quoteDetail{
-  background-color:white;
-   margin-top: 0;
-   padding: 1.5rem;
-   width: 65vw;
-   height: 100vh;
-   flex-wrap: wrap;
-   overflow-y: scroll;
-   background-color: white;
- }
- input{
-   color: white !important;
- }
 
 
-}

@@ -1,4 +1,4 @@
-import { Component, Pipe, ViewEncapsulation } from '@angular/core';
+import { Component, Pipe } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { QuoteTextComponent } from '../quote-text/quote-text.component';
 import { Quotes } from '../quotes';
@@ -8,8 +8,8 @@ import { InfoserviceService } from '../service/infoservice.service';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./form.component.css']
+  
 })
 export class FormComponent {
 
@@ -30,7 +30,17 @@ quotes: Quotes[] = [
      author: 'John cena',
      name: 'mohamed ibrahim', 
      quote: "Setting a good example for your children takes all the fun out of middle age"
-  }
+  },
+  { 
+    author: 'Harry potter',
+    name: 'mohamed ibrahim', 
+    quote: "He gave you to me. Now I have to give you back to him, Mama."
+ },
+ { 
+  author: 'simon fraser',
+  name: 'mohamed ibrahim', 
+  quote: "Setting a good example for your children takes all the fun out of middle age"
+ }
 ]
 
 
@@ -49,17 +59,7 @@ quotes: Quotes[] = [
     this.name = '';
   
   }
-  removeCard(){
-    alert("Are you sure you want to Delete this Quote?");
-    document.getElementById('quoteCard')?.remove()
-  }
-  like(){
-    this.infoserviceService.likeCount++
-  }
-  unlike(){
-    this.infoserviceService.unLikeCount++
-
-  }
+ 
   
  
 
