@@ -1,101 +1,30 @@
 <section>
-<!-- header -->
-  <!-- <header class="text-center" style="color: white;">
-    <h1 class="container" >QuoteApp</h1>
-  </header> -->
-  <div class="root container-fluid d-flex flex-column flex-lg-row ">
-      <div class="wrapper shadow-lg">
+  <div class="root container-fluid d-flex flex-column flex-lg-row w-100 ">
+
+      <div class="wrapper shadow-lg  ">
         <header class="text-center" style="color: white;">
-          <h1 class="container " data-aos ='fade-down' data-aos-duration="4500">QuoteApp</h1>
+          <h1 class="container p-2" data-aos ='fade-down' data-aos-duration="4500">QuoteApp</h1>
         </header>
 
-        <i class="fas fa-quote-right position-abolute"></i>
-    <!-- form section -->
-        <form class="container-fluid d-flex flex-column gap-4 text-center  mt-lg-5 ">
-          <label for="">Author</label>
+        <i class="fas fa-quote-right"></i>
+        <form class="container-fluid d-flex flex-column gap-4 text-center ">
+          <label for=""><u>Author</u></label>
           <input type="text" name="Authorname"  placeholder="Author Name..." [(ngModel)]='author'data-aos="zoom-down"  data-aos-duration="3500">  
-          <label for="">Publisher</label>
+          <label for=""><u>Publisher</u></label>
           <input type="text" name="name"  placeholder="Your Name..." [(ngModel)]='name' data-aos="zoom-down"  data-aos-duration="3500"> 
-          <label for="">Quote</label>
+          <label for=""><u>Quote</u></label>
           <textarea type="text" name="message" placeholder="Write your Quote Here..." [(ngModel)]='quote'data-aos="zoom-down"  data-aos-duration="3500" ></textarea>
-          <button class="btn btn-success shadow"  (click) ='sendBtn()'>Send</button>
-        </form>
-        <img [src] = 'bookshelfImg' style="width: 100%; height: auto"  data-aos="fade-right" data-aos-offset="300"
-        data-aos-easing="ease-in-sine">>
-      </div>
-
+          <button class="btn btn-success shadow" (click) ='sendBtn()'>Send</button>
           
-     <div class="quoteDetail d-flex flex-lg-row flex-column  gap-2 " >
-       
-
-       <div class="quoteCard p-3 bg-light shadow-lg border rounded" style="color:black" id="quoteCard"  data-aos="zoom-in"  data-aos-duration="3500" >
-      <p>"He gave you to me. Now I have to give you back to him, Mama."</p>        
-    <!-- like and dislike btns -->
-    <div class="likeOrDislike col">
-      <p class="btn btn-success "><i class="far fa-thumbs-up">  </i></p>
-      <p class="btn btn-danger "><i class="far fa-thumbs-down ">  </i></p>
-    </div>
-    <!-- author and publisher -->
-    <div>
-      <span>Publisher: Simon Fraser</span><br>
-      <span><i>- King of Scotland</i></span>
-
-       <section class="timePlusBin d-flex justify-content-between">
-         <i> Written at 11:12am</i>
-        <i class="fas fa-trash-alt" (click) ='removeCard()' ></i>  <!--(click) ='removeCard()' -->
-       </section>
-    </div>
-  
-  
-  
+        </form>
       </div>
-      <div class="quoteCard p-3 bg-light shadow-lg border rounded" style="color:black" id="quoteCard"  data-aos="zoom-in"  data-aos-duration="3400" >
-    <p>"Memories last Longer whilst Life gets Better, Be sure to live to the fullest."</p>        
-  <!-- like and dislike btns -->
-  <div class="likeOrDislike col">
-    <p class="btn btn-success "><i class="far fa-thumbs-up">  </i></p>
-    <p class="btn btn-danger "><i class="far fa-thumbs-down ">  </i></p>
-  </div>
-  <!-- author and publisher -->
-  <div>
-    <span>Publisher: Edward mwangi</span><br>
-    <span><i>- Nelson Mandela</i></span>
-
-     <section class="timePlusBin d-flex justify-content-between">
-       <i> Written at 4:12pm</i>
-      <i class="fas fa-trash-alt"(click) ='removeCard()' ></i>  <!--(click) ='removeCard()' -->
-     </section>
-  </div>
-
-
-
-     </div>
-     <div class="quoteCard p-3 bg-light shadow-lg border rounded" style="color:black" id="quoteCard" *ngFor = 'let q of quotes'  data-aos="zoom-in"  data-aos-duration="3600" >
-      <p>"{{q.quote}}."</p>        
-    <!-- like and dislike btns -->
-    <div class="likeOrDislike col">
-      <p class="btn btn-success "><i class="far fa-thumbs-up" (click) ='like()'> {{infoserviceService.likeCount}} </i></p>
-      <p class="btn btn-danger "><i class="far fa-thumbs-down " (click) ='unlike()'> {{infoserviceService.unLikeCount}} </i></p>
-    </div>
-    <!-- author and publisher -->
-    <div>
-      <span>Publisher: {{q.name}}</span><br>
-      <span><i>- {{q.author}}</i></span>
-
-       <section class="timePlusBin d-flex justify-content-between">
-         <i> Written at {{infoserviceService.date | date:'shortTime'}}</i>
-        <i class="fas fa-trash-alt"(click) ='removeCard()'></i>  
-       </section>
-    </div>
-  
-  
-  
-     </div>
-
-     </div>
-
+    <section class="quoteDetail d-flex flex-column flex-lg-row gap-5 mx-4 pt-5 ">
+      <div *ngFor ='let q of quotes' class="bg-body">
+        <app-quote-detail [author] ='author' [name] ='name' [quote] ='quote' [quotes] = 'q'></app-quote-detail>
+      </div>
+    </section>
+     
       
-    <app-quote-detail [author] ='author' [name] ='name' [quote] ='quote'></app-quote-detail>
     
     </div>
 </section>
