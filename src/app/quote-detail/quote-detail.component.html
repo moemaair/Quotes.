@@ -1,17 +1,22 @@
-<!-- <div class="quoteDetail rounded " style="color: black; letter-spacing: 1.5px;">
-  <div class="quoteCard p-3  "  id="quoteCard">
-    <p>"i Pray for Your Wellbeing"</p>        
-  <div class="likeOrDislike col">
-    <p class="btn btn-success "><i class="far fa-thumbs-up">  </i></p>
-    <p class="btn btn-danger "><i class="far fa-thumbs-down ">  </i></p>
-  </div>
-  <div>
-    <span>Publisher Name: Alex</span>
-    <span><i> Auhor Name: Evans Kidero</i></span><br>
 
-     <section class="timePlusBin d-flex justify-content-between">
-       <i>written at 03:34 am</i>
-      <i class="fas fa-trash-alt" ></i>
-     </section>
+  <div class="quoteCard p-3 bg-light shadow-lg  rounded" style="color:black" id="quoteCard"  data-aos="zoom-in"  data-aos-duration="3500" >
+    <p><strong>"{{quotes.quote}}"</strong></p>
+
+   <div class="likeOrDislike col">
+    <p class="btn btn-success "><i class="far fa-thumbs-up"(click) ='like()'>{{likeCount}}</i></p>
+    <p class="btn btn-danger "><i class="far fa-thumbs-down " (click) ='unlike()'>{{unLikeCount}}  </i></p>
   </div>
- -->
+
+
+    <span>Publisher: {{quotes.name}}</span><br>
+    <span><i>- {{quotes.author}}</i></span>
+
+  <section class="timePlusBin d-flex justify-content-between">
+    <i> Written at 11:12am</i>
+   <i class="fas fa-trash-alt" (click) ='removeCard()'></i>  
+  </section>
+  
+
+
+
+
