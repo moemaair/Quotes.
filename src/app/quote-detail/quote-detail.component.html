@@ -12,7 +12,7 @@
     <span><i>- {{quotes.author}}</i></span>
 
   <section class="timePlusBin d-flex justify-content-between">
-    <i> Written at 11:12am</i>
+    <i> Written at {{infoserviceService.date |date:' h:mm' }}</i>
    <i class="fas fa-trash-alt" (click) ='removeCard()'></i>  
   </section>
   

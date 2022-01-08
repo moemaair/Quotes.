@@ -70,6 +70,7 @@ input::placeholder, input{
   .wrapper{
     width: 35vw;
   }
+
   .root .quoteDetail {
   flex-wrap: wrap;
   width: 60vw;

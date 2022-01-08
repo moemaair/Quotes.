@@ -21,7 +21,7 @@ img{
 /* Big screens above 49rem */
 @media screen and (min-width: 49rem) {
   .root{
-   
+
     gap: 0;
   }
  
