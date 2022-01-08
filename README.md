@@ -1,27 +1,42 @@
+Project Title - QUOTEAPP
+====================================================
+
+Description About:
+
+* * *
+QUOTEAPP is a web application that has inputs to generate quotes written by the original Author and the person writing is the Publisher.
+
 # QuoteApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve -o` for a dev server, which you will be taken automatically to your search engine with Url = `http://localhost:4200/`. 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Technologies Use
+ 
+ * HTML5
+ * CSS3
+ * BOOTSTRAP
+ * GIT
+ * Angular Framework.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Mohamed Ibrahim
+* [Email Me](mailto:rageali12@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)
+* [Portfolio](https://moemaair.github.io/Portfolio-Landing-pg/)
 
-## Further help
+<hr>
+## License
+The MIT Open source License: [MIT LICENSE](https://opensource.org/licenses/MIT)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
